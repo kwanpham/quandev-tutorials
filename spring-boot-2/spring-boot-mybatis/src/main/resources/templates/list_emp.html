@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Order Details Table with Search Filter</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+
+        <!-- LIST -->
+        <div class=col-md-12>
+
+            <legend>List of clients</legend>
+
+            <div class="pull-left">
+                <form method="get" action="/">
+                    Tìm Kiếm theo tên :
+                    <input type="text" name="search">
+                </form>
+
+            </div>
+
+            <div class="pull-right">
+                <a href="/addEmp" class="btn btn-default-btn-xs btn-success"><i class="glyphicon glyphicon-plus"></i> New</a>
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <table class="table table-bordered table-condensed table-hover">
+                <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <th>Gender</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+
+                </thead>
+                <tbody id="form-list-client-body">
+                <tr th:each="item : ${employeeList}">
+                    <td th:text="${item.id}"></td>
+                    <td th:text="${item.name}"></td>
+                    <td th:text="${item.gender}"></td>
+                    <td th:text="${item.status}"></td>
+
+                    <td>
+                        <a th:href="@{/editEmp/{id}(id=${item.id})}" title="edit this user" class="btn btn-default btn-sm "> <i
+                                class="glyphicon glyphicon-edit text-primary"></i> </a>
+                        <a th:href="@{/deleteEmp/{id}(id=${item.id})}" title="delete this user" class="btn btn-default btn-sm "> <i
+                                class="glyphicon glyphicon-trash text-danger"></i> </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

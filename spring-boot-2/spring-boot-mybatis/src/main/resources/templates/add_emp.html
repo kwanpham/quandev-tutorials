@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Order Details Table with Search Filter</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <form class="form-horizontal" id="form-edit-client" method="post">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>Client</legend>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="client-name">Name</label>
+                        <div class="col-md-4">
+                            <input id="client-name" name="name" type="text" placeholder="your client's name"
+                                   class="form-control input-md">
+                            <span class="help-block">Full name of your customer</span>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Radios -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="client-status">Client status</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="client-gender-0">
+                                    <input type="radio" name="gender" id="client-gender-0" value="Male"
+                                           checked="checked">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="client-gender-1">
+                                    <input type="radio" name="gender" id="client-gender-1" value="Female">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Multiple Radios -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="client-status">Client status</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="client-status-0">
+                                    <input type="radio" name="status" id="client-status-0" value="Active"
+                                           checked="checked">
+                                    Active
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="client-status-1">
+                                    <input type="radio" name="status" id="client-status-1" value="Inactive">
+                                    Inactive
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="btn-save"></label>
+                        <div class="col-md-4">
+                            <button type="submit" id="btn-save" name="btn-save" class="btn btn-success">Save</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
