@@ -14,7 +14,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @SpringBootTest
-class MybatisTriggerDemoApplicationTests {
+class SpringbootMybatisDemoApplicationTests {
 
     @Autowired
     JdbcTemplate jdbcTemplate;

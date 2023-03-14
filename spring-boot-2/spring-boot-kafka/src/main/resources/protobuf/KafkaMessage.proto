@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package stackjava.com.springbootkafka.dto;
+option java_outer_classname = "ProtoMessage";
+option java_multiple_files = true;
+
+message KafkaMessageProtobuf {
+  int32 id = 1;
+  string name = 2;
+  string address = 3;
+  string phone_number = 4;
+  int32 age = 5;
+  int64 time = 6;
+
+}
