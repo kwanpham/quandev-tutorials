@@ -19,8 +19,8 @@
             SELECT seq_employee.nextVal FROM dual
         </selectKey>
 
-        INSERT INTO employee (employee_id , name, phone, email, gender, status, content, create_date)
-        VALUES (#{employeeId}, #{name}, #{phone}, #{email}, #{gender}, #{status},#{content}, #{createDate})
+        INSERT INTO employee (employee_id , name, phone, email, gender, status, avatar, create_date)
+        VALUES (#{employeeId}, #{name}, #{phone}, #{email}, #{gender}, #{status},#{avatar}, #{createDate})
     </insert>
 
     <update id="update" parameterType="io.github.kwanpham.springmybatisdemo.model.Employee">
@@ -73,12 +73,6 @@
         where employee_id = #{id}
     </select>
 
-
-    <select id="findByIdForUpdate" parameterType="long" resultType="io.github.kwanpham.springmybatisdemo.model.Employee">
-        Select *
-        from employee
-        where employee_id = #{id} for update
-    </select>
 
 
 </mapper>

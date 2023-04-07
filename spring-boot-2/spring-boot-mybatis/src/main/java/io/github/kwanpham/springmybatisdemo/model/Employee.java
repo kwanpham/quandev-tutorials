@@ -18,7 +18,7 @@ public class Employee {
     private String email;
     private String gender;
     private String status;
-    private String content = "";
+    private byte[] avatar;
     private long money;
     private LocalDateTime createDate;
 

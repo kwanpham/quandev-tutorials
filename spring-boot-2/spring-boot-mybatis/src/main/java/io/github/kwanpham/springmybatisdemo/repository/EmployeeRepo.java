@@ -25,7 +25,6 @@ public interface EmployeeRepo {
 //    @Select("SELECT * FROM employee WHERE employee_id = #{employee_id}")
     Optional<Employee> findById(long id);
 
-    Optional<Employee> findByIdForUpdate(long id);
 
 
     //@Insert("INSERT INTO employee (name, phone, email, gender, status, create_date) VALUES(#{name}, #{phone}, #{email}, #{gender}, #{status}, #{status})")
@@ -44,7 +43,10 @@ public interface EmployeeRepo {
 
     long countByEmployeeSearch(EmployeeSearch employeeSearch);
 
-    @Select("select money from employee where employee_id = #{id} for update")
-    Optional<Long> findMoneyById(Long id);
+    @Select("select * from employee where employee_id = #{id}")
+    Optional<Employee> findEmployeeById(Long id);
+
+    @Select("select * from employee where employee_id = #{id} for update")
+    Optional<Employee> findEmployeeByIdForUpdate(Long id);
 
 }
