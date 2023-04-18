@@ -1,50 +1,76 @@
 package io.github.kwanpham.springmybatisdemo.service;
 
-import io.github.kwanpham.springmybatisdemo.model.Employee;
-import io.github.kwanpham.springmybatisdemo.repository.EmployeeRepo;
+import io.github.kwanpham.springmybatisdemo.model.BankAccountVO;
+import io.github.kwanpham.springmybatisdemo.repository.BankAccountRepo;
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import java.util.Optional;
-import java.util.concurrent.CountDownLatch;
 
 @Service
 public class MoneyService {
 
     @Autowired
-    EmployeeRepo employeeRepo;
+    BankAccountRepo bankAccountRepo;
 
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    @Transactional(propagation = Propagation.REQUIRES_NEW , isolation = Isolation.SERIALIZABLE)
-    public void withDrawMoney(long id , long money) throws Exception {
 
-        addAmount(id,money);
-    }
-
-    @Transactional(propagation = Propagation.MANDATORY)
-    public void addAmount(Long id, long amount) throws Exception {
-        Optional<Employee> employeeOptional = employeeRepo.findById(id);
-        if (!employeeOptional.isPresent()) {
+    @Transactional()
+    public void withDrawMoneyOptimisticLock(long id, long amount) throws Exception {
+        Optional<BankAccountVO> bankAccountVOOptional = bankAccountRepo.findById(id);
+        if (!bankAccountVOOptional.isPresent()) {
             throw new Exception("Account not found " + id);
         }
-        Employee employee = employeeOptional.get();
-        long newBalance = employee.getMoney() + amount;
+        BankAccountVO bankAccountVO = bankAccountVOOptional.get();
+        long newBalance = bankAccountVO.getBalance() - amount;
         if (newBalance < 0) {
             throw new Exception(
-                    "The money in the account '" + id + "' is not enough (" + employee.getMoney() + ")");
+                    "The money in the account '" + id + "' is not enough (" + bankAccountVO.getBalance() + ")");
+        }
+        bankAccountVO.setBalance(newBalance);
+        // Update to DB
+        int result = bankAccountRepo.updateById(bankAccountVO);
+        if (result < 1 ) {
+            throw new Exception("WithDrawMoney failed because version is old : " + bankAccountVO.getVersion());
+        }
+    }
+
+
+    @Transactional()
+    public void withDrawMoneyPessimisticLock(long id, long amount) throws Exception {
+        Optional<BankAccountVO> bankAccountVOOptional = bankAccountRepo.findById(id);
+        if (!bankAccountVOOptional.isPresent()) {
+            throw new Exception("Account not found " + id);
+        }
+        int result = bankAccountRepo.updateBalance(id ,amount);
+        if (result < 1 ) {
+            throw new Exception("WithDrawMoney failed  : " + amount);
         }
 
-        // Update to DB
-        String sqlUpdate = "Update EMPLOYEE set money = ? where employee_id = ?";
-        jdbcTemplate.update(sqlUpdate, newBalance, employee.getEmployeeId());
     }
+
+    @Transactional()
+    public void withDrawMoneyPessimisticLock2(long id, long amount) throws Exception {
+        Optional<BankAccountVO> bankAccountVOOptional = bankAccountRepo.findByIdForUpdate(id);
+        if (!bankAccountVOOptional.isPresent()) {
+            throw new Exception("Account not found " + id);
+        }
+        BankAccountVO bankAccountVO = bankAccountVOOptional.get();
+        long newBalance = bankAccountVO.getBalance() - amount;
+        if (newBalance < 0) {
+            throw new Exception(
+                    "The money in the account '" + id + "' is not enough (" + bankAccountVO.getBalance() + ")");
+        }
+        int result = jdbcTemplate.update("UPDATE BANK_ACCOUNT SET BALANCE = (BALANCE - ?) WHERE ID = ?" , amount , id);
+        if (result < 1 ) {
+            throw new Exception("WithDrawMoney failed  : " + amount);
+        }
+    }
+
 
 }
