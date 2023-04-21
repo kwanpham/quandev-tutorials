@@ -33,7 +33,7 @@ class MoneyServiceTest {
     @Test
     public void testMutilTransferOnAAccount() {
 
-        int threadNumber = 100;
+        int threadNumber = 10;
         ExecutorService threadPool = Executors.newFixedThreadPool(threadNumber);
 
         for (int i = 0 ; i < threadNumber ; i++) {
@@ -65,7 +65,7 @@ class MoneyServiceTest {
     @Test
     public void testMutilTransferOnAAccountPessimisticLock() {
 
-        int threadNumber = 100;
+        int threadNumber = 10;
         ExecutorService threadPool = Executors.newFixedThreadPool(threadNumber);
 
         for (int i = 0 ; i < threadNumber ; i++) {

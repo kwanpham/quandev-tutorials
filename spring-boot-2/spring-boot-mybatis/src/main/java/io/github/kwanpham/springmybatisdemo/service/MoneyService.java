@@ -54,19 +54,21 @@ public class MoneyService {
 
     }
 
-    @Transactional()
-    public void withDrawMoneyPessimisticLock2(long id, long amount) throws Exception {
+    @Transactional
+    public void  withDrawMoneyPessimisticLock2(long id, long amount) throws Exception {
         Optional<BankAccountVO> bankAccountVOOptional = bankAccountRepo.findByIdForUpdate(id);
         if (!bankAccountVOOptional.isPresent()) {
             throw new Exception("Account not found " + id);
         }
+//        Thread.sleep(50000);
+
         BankAccountVO bankAccountVO = bankAccountVOOptional.get();
         long newBalance = bankAccountVO.getBalance() - amount;
         if (newBalance < 0) {
             throw new Exception(
                     "The money in the account '" + id + "' is not enough (" + bankAccountVO.getBalance() + ")");
         }
-        int result = jdbcTemplate.update("UPDATE BANK_ACCOUNT SET BALANCE = (BALANCE - ?) WHERE ID = ?" , amount , id);
+        int result = jdbcTemplate.update("UPDATE BANK_ACCOUNT SET BALANCE = ? WHERE ID = ?" , newBalance , id);
         if (result < 1 ) {
             throw new Exception("WithDrawMoney failed  : " + amount);
         }
