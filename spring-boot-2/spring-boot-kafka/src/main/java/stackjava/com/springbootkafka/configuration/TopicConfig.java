@@ -19,8 +19,8 @@ public class TopicConfig {
 
     @Bean
     public NewTopic generalTopic() {
-        return TopicBuilder.name("demo")
-                .partitions(100)
+        return TopicBuilder.name("demo3")
+                .partitions(1)
                 .replicas(1)
                 .build();
     }

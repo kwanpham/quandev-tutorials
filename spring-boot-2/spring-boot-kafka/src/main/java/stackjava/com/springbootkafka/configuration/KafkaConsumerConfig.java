@@ -39,6 +39,7 @@ public class KafkaConsumerConfig {
         props.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG, "100");
         props.put(ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG, "15000");
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        props.put(JsonDeserializer.TRUSTED_PACKAGES, "stackjava.com.springbootkafka.dto");
 
         return new DefaultKafkaConsumerFactory<>(props);
     }
@@ -47,9 +48,9 @@ public class KafkaConsumerConfig {
         ConcurrentKafkaListenerContainerFactory<String, String>
                 factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
-        factory.getContainerProperties().setSyncCommits(false);
+//        factory.getContainerProperties().setSyncCommits(false);
         factory.getContainerProperties().setAckMode(ContainerProperties.AckMode.MANUAL_IMMEDIATE);
-        factory.setBatchListener(true);
+//        factory.setBatchListener(true);
         return factory;
     }
 }
