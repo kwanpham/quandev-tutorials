@@ -1,0 +1,782 @@
+[
+  {
+    "bicCode": "ABBKVNVN",
+    "bankName": "AnBinh bank",
+    "bankId": "191919",
+    "benId": "970425",
+    "bankNameVN": "Ngân hàng An Bình",
+    "binIds": [
+      "970425"
+    ]
+  },
+  {
+    "bicCode": "ASCBVNVN",
+    "bankName": "ACB",
+    "bankId": "970416",
+    "benId": "970416",
+    "bankNameVN": "Ngân hàng Á Châu (ACB)",
+    "binIds": [
+      "970416"
+    ]
+  },
+  {
+    "bicCode": "BIDVVNVN",
+    "bankName": "BIDV",
+    "bankId": "970488",
+    "benId": "970418",
+    "bankNameVN": "Ngân hàng Đầu tư và Phát triển Việt Nam BIDV",
+    "binIds": [
+      "970418"
+    ]
+  },
+  {
+    "bicCode": "BVBVVNVN",
+    "bankName": "BaoViet bank",
+    "bankId": "970438",
+    "benId": "970438",
+    "bankNameVN": "Ngân hàng Thương mại Cổ phần Bảo Việt",
+    "binIds": [
+      "970438"
+    ]
+  },
+  {
+    "bicCode": "EACBVNVN",
+    "bankName": "DongA bank",
+    "bankId": "970406",
+    "benId": "970406",
+    "bankNameVN": "Ngân Hàng TMCP Đông Á",
+    "binIds": [
+      "970406"
+    ]
+  },
+  {
+    "bicCode": "GBNKVNVN",
+    "bankName": "GP bank",
+    "bankId": "970408",
+    "benId": "970408",
+    "bankNameVN": "Ngân hàng thương mại trách nhiệm hữu hạn một thành viên Dầu khí toàn cầu – GP Bank",
+    "binIds": [
+      "970408",
+      "559463",
+      "532563",
+      "532153"
+    ]
+  },
+  {
+    "bicCode": "HDBCVNVN",
+    "bankName": "HD bank",
+    "bankId": "970437",
+    "benId": "970437",
+    "bankNameVN": "Ngân hàng TMCP Phát triển TP.HCM - HDBank",
+    "binIds": [
+      "970437",
+      "498766",
+      "498767",
+      "498768",
+      "498769",
+      "462478",
+      "416259",
+      "515131",
+      "532137",
+      "527773",
+      "547451",
+      "554833"
+    ]
+  },
+  {
+    "bicCode": "IABBVNVN",
+    "bankName": "Indovina bank",
+    "bankId": "888999",
+    "benId": "970434",
+    "bankNameVN": "Ngân hàng TNHH Indovina",
+    "binIds": [
+      "970434",
+      "418248",
+      "459220",
+      "413534",
+      "413535",
+      "406598"
+    ]
+  },
+  {
+    "bicCode": "BFTVVNVN",
+    "bankName": "Vietcombank",
+    "bankId": "686868",
+    "benId": "970436",
+    "bankNameVN": "Ngân hàng thương mại cổ phần Ngoại thương Việt Nam – Vietcombank",
+    "binIds": [
+      "970436",
+      "526418",
+      "428310",
+      "621295",
+      "377160",
+      "469173",
+      "477390",
+      "403277",
+      "222806",
+      "452404"
+    ]
+  },
+  {
+    "bicCode": "KLBKVNVN",
+    "bankName": "Kienlong bank",
+    "bankId": "970452",
+    "benId": "970452",
+    "bankNameVN": "Ngân hàng Thương mại Cổ phần Kiên Long – Kienlongbank",
+    "binIds": [
+      "970452"
+    ]
+  },
+  {
+    "bicCode": "LVBKVNVN",
+    "bankName": "Lienvietpostbank",
+    "bankId": "970449",
+    "benId": "970449",
+    "bankNameVN": "Ngân hàng thương mại cổ phần Bưu điện Liên Việt",
+    "binIds": [
+      "970449"
+    ]
+  },
+  {
+    "bicCode": "MSCBVNVN",
+    "bankName": "MBBank",
+    "bankId": "970422",
+    "benId": "970422",
+    "bankNameVN": "Ngân hàng Quân đội –MBBank",
+    "binIds": [
+      "970422",
+      "548566",
+      "484803",
+      "484804",
+      "472674",
+      "356418",
+      "356419",
+      "356433"
+    ]
+  },
+  {
+    "bicCode": "NAMAVNVN",
+    "bankName": "NamA bank",
+    "bankId": "970428",
+    "benId": "970428",
+    "bankNameVN": "Ngân hàng TMCP Nam Á – Nam A Bank",
+    "binIds": [
+      "970428",
+      "524083",
+      "533147",
+      "533968",
+      "559270",
+      "528645",
+      "516995",
+      "356519"
+    ]
+  },
+  {
+    "bicCode": "NVBAVNVN",
+    "bankName": "NCB",
+    "bankId": "818188",
+    "benId": "970419",
+    "bankNameVN": "Ngân hàng Quốc Dân – NCB",
+    "binIds": [
+      "970419"
+    ]
+  },
+  {
+    "bicCode": "NASCVNVN",
+    "bankName": "BacA bank",
+    "bankId": "970409",
+    "benId": "970409",
+    "bankNameVN": "Ngân hàng TMCP Bắc Á– BAC A BANK",
+    "binIds": [
+      "970409"
+    ]
+  },
+  {
+    "bicCode": "OJBAVNVN",
+    "bankName": "Ocean bank",
+    "bankId": "970414",
+    "benId": "970414",
+    "bankNameVN": "Ngân hàng Đại Dương – OceanBank",
+    "binIds": [
+      "970414",
+      "477560",
+      "477561",
+      "436467",
+      "436468"
+    ]
+  },
+  {
+    "bicCode": "ORCOVNVN",
+    "bankName": "OCB",
+    "bankId": "970448",
+    "benId": "970448",
+    "bankNameVN": "Ngân hàng TMCP Phương Đông(OCB)",
+    "binIds": [
+      "970448"
+    ]
+  },
+  {
+    "bicCode": "PGBLVNVN",
+    "bankName": "PG bank",
+    "bankId": "970430",
+    "benId": "970430",
+    "bankNameVN": "Ngân hàng TMCP Xăng dầu Petrolimex (PG Bank)",
+    "binIds": [
+      "970430"
+    ]
+  },
+  {
+    "bicCode": "SHBAVNVN",
+    "bankName": "SHB",
+    "bankId": "970443",
+    "benId": "970443",
+    "bankNameVN": "Ngân hàng TMCP Sài Gòn - Hà Nội (SHB)",
+    "binIds": [
+      "970443"
+    ]
+  },
+  {
+    "bicCode": "SBITVNVN",
+    "bankName": "Saigonbank",
+    "bankId": "161087",
+    "benId": "970400",
+    "bankNameVN": "Ngân hàng TMCP Sài Gòn Công Thương – SAIGONBANK",
+    "binIds": [
+      "970400"
+    ]
+  },
+  {
+    "bicCode": "SACLVNVN",
+    "bankName": "SCB",
+    "bankId": "157979",
+    "benId": "970429",
+    "bankNameVN": "Ngân hàng Thương mại cổ phần Sài Gòn – SCB",
+    "binIds": [
+      "970429",
+      "489516",
+      "489517",
+      "489518",
+      "510235",
+      "545579",
+      "554627",
+      "550796",
+      "453618",
+      "512454",
+      "547139"
+    ]
+  },
+  {
+    "bicCode": "SGTTVNVN",
+    "bankName": "Sacombank",
+    "bankId": "970403",
+    "benId": "970403",
+    "bankNameVN": "Ngân hàng TMCP Sài Gòn Thương Tín – Sacombank",
+    "binIds": [
+      "422151",
+      "436438",
+      "436445",
+      "467964",
+      "469654",
+      "472074",
+      "472075",
+      "486265",
+      "512341",
+      "526830",
+      "620009",
+      "621055",
+      "625002",
+      "970403",
+      "401520",
+      "461337",
+      "461138",
+      "461140",
+      "466243",
+      "356480",
+      "356481",
+      "552332",
+      "517416",
+      "534437",
+      "356062",
+      "357115",
+      "412725",
+      "423325",
+      "455376",
+      "423238"
+    ]
+  },
+  {
+    "bicCode": "SHBKVNVN",
+    "bankName": "Shinhan Vietnam",
+    "bankId": "970424",
+    "benId": "970424",
+    "bankNameVN": "Ngân hàng TNHH MTV Shinhan Việt Nam",
+    "binIds": [
+      "970424",
+      "469672",
+      "469673",
+      "469674",
+      "403013",
+      "421595",
+      "462842",
+      "462843",
+      "462844"
+    ]
+  },
+  {
+    "bicCode": "SEAVVNVN",
+    "bankName": "SeABank",
+    "bankId": "970468",
+    "benId": "970440",
+    "bankNameVN": "Ngân hàng thương mại cổ phần Đông Nam Á – SeABank",
+    "binIds": [
+      "970440",
+      "540392",
+      "537158",
+      "437420",
+      "437421",
+      "436545",
+      "436546",
+      "476636",
+      "405082",
+      "523611"
+    ]
+  },
+  {
+    "bicCode": "TPBVVNVN",
+    "bankName": "TPBank",
+    "bankId": "970423",
+    "benId": "970423",
+    "bankNameVN": "Ngân hàng thương mại cổ phần Tiên Phong - TPBank",
+    "binIds": [
+      "970423"
+    ]
+  },
+  {
+    "bicCode": "VIDPVNVN",
+    "bankName": "Public Vietnam",
+    "bankId": "970439",
+    "benId": "970439",
+    "bankNameVN": "Ngân hàng trách nhiệm hữu hạn một thành viên Public Việt Nam",
+    "binIds": [
+      "970439"
+    ]
+  },
+  {
+    "bicCode": "VCBCVNVN",
+    "bankName": "Viet Capital Bank",
+    "bankId": "970454",
+    "benId": "970454",
+    "bankNameVN": "Ngân hàng TMCP Bản Việt – Viet Capital Bank",
+    "binIds": [
+      "970454",
+      "417354",
+      "475771"
+    ]
+  },
+  {
+    "bicCode": "VNTTVNVN",
+    "bankName": "VietBank",
+    "bankId": "970433",
+    "benId": "970433",
+    "bankNameVN": "Ngân hàng Việt Nam Thương Tín – VietBank",
+    "binIds": []
+  },
+  {
+    "bicCode": "VNACVNVN",
+    "bankName": "VietABank",
+    "bankId": "166888",
+    "benId": "970427",
+    "bankNameVN": "Ngân hàng thương mại cổ phần Việt Á – VietABank",
+    "binIds": [
+      "970427",
+      "402534"
+    ]
+  },
+  {
+    "bicCode": "VBAAVNVN",
+    "bankName": "Agribank",
+    "bankId": "970405",
+    "benId": "970405",
+    "bankNameVN": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam Agribank",
+    "binIds": [
+      "970405"
+    ]
+  },
+  {
+    "bicCode": "EBVIVNVN",
+    "bankName": "Eximbank",
+    "bankId": "452999",
+    "benId": "970431",
+    "bankNameVN": "Ngân hàng TMCP Xuất nhập khẩu Việt Nam – Eximbank",
+    "binIds": [
+      "970431",
+      "707070"
+    ]
+  },
+  {
+    "bicCode": "VNIBVNVN",
+    "bankName": "VIB",
+    "bankId": "180906",
+    "benId": "970441",
+    "bankNameVN": "Ngân hàng VIB",
+    "binIds": [
+      "970441",
+      "512824",
+      "526887",
+      "513892",
+      "513094",
+      "531828",
+      "536032",
+      "423865"
+    ]
+  },
+  {
+    "bicCode": "ICBVVNVN",
+    "bankName": "VietinBank",
+    "bankId": "970415",
+    "benId": "970415",
+    "bankNameVN": "Ngân hàng TMCP Công Thương Việt Nam – VietinBank",
+    "binIds": [
+      "970415"
+    ]
+  },
+  {
+    "bicCode": "MCOBVNVN",
+    "bankName": "Maritme bank",
+    "bankId": "970426",
+    "benId": "970426",
+    "bankNameVN": "Ngân hàng Thương mại Cổ phần Hàng Hải Việt Nam (Maritime Bank)",
+    "binIds": [
+      "970426",
+      "511409",
+      "521976",
+      "510995",
+      "516294",
+      "430389",
+      "532451",
+      "402215",
+      "472265",
+      "412189",
+      "402204",
+      "479155"
+    ]
+  },
+  {
+    "bicCode": "VPBKVNVN",
+    "bankName": "VP bank",
+    "bankId": "981957",
+    "benId": "970432",
+    "bankNameVN": "Ngân hàng Việt Nam Thịnh Vượng VPBank",
+    "binIds": [
+      "970432",
+      "520395",
+      "520399",
+      "521377",
+      "524394",
+      "528626",
+      "454119",
+      "523975",
+      "518966",
+      "406453",
+      "454107",
+      "405280",
+      "478668",
+      "419834",
+      "522384",
+      "559073",
+      "519930"
+    ]
+  },
+  {
+    "bicCode": "VRBAVNVN",
+    "bankName": "VRB",
+    "bankId": "970421",
+    "benId": "970421",
+    "bankNameVN": "Ngân hàng Liên doanh Việt – Nga (VRB)",
+    "binIds": [
+      "970421",
+      "442415",
+      "442416"
+    ]
+  },
+  {
+    "bicCode": "VTCBVNVN",
+    "bankName": "Techcombank",
+    "bankId": "888899",
+    "benId": "970407",
+    "bankNameVN": "Ngân hàng Techcombank",
+    "binIds": [
+      "970407"
+    ]
+  },
+  {
+    "bicCode": "WBVNVNVN",
+    "bankName": "Pvcombank",
+    "bankId": "970412",
+    "benId": "970412",
+    "bankNameVN": "Ngân hàng TMCP Đại Chúng Việt Nam",
+    "binIds": [
+      "970412",
+      "538742",
+      "542553",
+      "511962",
+      "519501",
+      "517454"
+    ]
+  },
+  {
+    "bicCode": "COPBVNVN",
+    "bankName": "Hop tac xa Vietnam -Coopbank",
+    "bankId": "970446",
+    "benId": "970446",
+    "bankNameVN": "Hợp tác xã Việt Nam (Co-opbank)",
+    "binIds": [
+      "970446"
+    ]
+  },
+  {
+    "bicCode": "CIBBVNVN",
+    "bankName": "CIMB Viam",
+    "bankId": "422589",
+    "benId": "422589",
+    "bankNameVN": "Ngân hàng TNHH MTV CIMB Việt Nam",
+    "binIds": [
+      "422589"
+    ]
+  },
+  {
+    "bicCode": "HLBBVNVN",
+    "bankName": "Hongleong Vietnam",
+    "bankId": "970442",
+    "benId": "970442",
+    "bankNameVN": "Ngân hàng TNHH Một Thành Viên Hong Leong Việt Nam",
+    "binIds": [
+      "970442",
+      "412540"
+    ]
+  },
+  {
+    "bicCode": "IBKHVNVN",
+    "bankName": "IBK Hanoi",
+    "bankId": "970455",
+    "benId": "970455",
+    "bankNameVN": "Ngân hàng Công nghiệp Hàn Quốc - Chi nhánh Hà Nội",
+    "binIds": [
+      "970455"
+    ]
+  },
+  {
+    "bicCode": "IBKSVNVN",
+    "bankName": "IBK HCM",
+    "bankId": "970456",
+    "benId": "970456",
+    "bankNameVN": "Ngân hàng Công nghiệp Hàn Quốc - Chi nhánh Hồ Chí Minh",
+    "binIds": [
+      "970456"
+    ]
+  },
+  {
+    "bicCode": "UOVBVNVN",
+    "bankName": "UOB",
+    "bankId": "970458",
+    "benId": "970458",
+    "bankNameVN": "Ngân hàng UOB Việt Nam",
+    "binIds": [
+      "970458"
+    ]
+  },
+  {
+    "bicCode": "YOLOVNVN",
+    "bankName": "Yolo by VPBank",
+    "bankId": "546034",
+    "benId": "546034",
+    "bankNameVN": "TMCP Việt Nam Thịnh Vượng - Ngân hàng số YOLO by VPBank",
+    "binIds": []
+  },
+  {
+    "bicCode": "HVBKVNVN",
+    "bankName": "Wooribank",
+    "bankId": "970457",
+    "benId": "970457",
+    "bankNameVN": "TNHH MTV Woori Việt Nam",
+    "binIds": [
+      "970457"
+    ]
+  },
+  {
+    "bicCode": "HSBCVNVN",
+    "bankName": "HSBC",
+    "bankId": "458761",
+    "benId": "458761",
+    "bankNameVN": "Ngân hàng HSBC Việt Nam",
+    "binIds": [
+      "458761"
+    ]
+  },
+  {
+    "bicCode": "SCBLVNVN",
+    "bankName": "Standard Chartered",
+    "bankId": "970410",
+    "benId": "970410",
+    "bankNameVN": "Ngân hàng Standard Chartered tại Việt Nam",
+    "binIds": [
+      "970410"
+    ]
+  },
+  {
+    "bicCode": "UBVPVNVN",
+    "bankName": "Ubank by VPBank",
+    "bankId": "546035",
+    "benId": "546035",
+    "bankNameVN": "Ngân hàng số Ubank by VPBank",
+    "binIds": []
+  },
+  {
+    "bicCode": "DBSSVNVN",
+    "bankName": "DBS",
+    "bankId": "796500",
+    "benId": "796500",
+    "bankNameVN": "Ngân Hàng DBS Bank Ltd - CN TP. Hồ Chí Minh",
+    "binIds": []
+  },
+  {
+    "bicCode": "CZNBVNVN",
+    "bankName": "KB Kookmin HN",
+    "bankId": "970462",
+    "benId": "970462",
+    "bankNameVN": "Ngân hàng KB Kookmin - CN Hà nội",
+    "binIds": [
+      "970462"
+    ]
+  },
+  {
+    "bicCode": "GTBAVNVN",
+    "bankName": "MTV",
+    "bankId": "970444",
+    "benId": "970444",
+    "bankNameVN": "Ngân hàng TNHH MTV Xây Dựng Việt Nam",
+    "binIds": []
+  },
+  {
+    "bicCode": "NONGVNVN",
+    "bankName": "NONGHYUP HN",
+    "bankId": "801011",
+    "benId": "801011",
+    "bankNameVN": "Ngân hàng NONGHYUP - Chi nhánh Hà Nội",
+    "binIds": []
+  },
+  {
+    "bicCode": "CITIVNVN",
+    "bankName": "Citibank",
+    "bankId": "533948",
+    "benId": "533948",
+    "bankNameVN": "Ngân hàng Citibank",
+    "binIds": [
+      "533948"
+    ]
+  },
+  {
+    "bicCode": "KASIVNVN",
+    "bankName": "Kasikornbank",
+    "bankId": "668888",
+    "benId": "668888",
+    "bankNameVN": "Đại chúng TNHH Kasikornbank - Chi nhánh TP. HCM",
+    "binIds": []
+  },
+  {
+    "bicCode": "CZN2VNVN",
+    "bankName": "KB Kookmin HCM",
+    "bankId": "970463",
+    "benId": "970463",
+    "bankNameVN": "Ngân hàng KB Kookmin - CN HCM",
+    "binIds": [
+      "970463"
+    ]
+  },
+  {
+    "bicCode": "KOEXVNVN",
+    "bankName": "KEB HANA HN",
+    "bankId": "970467",
+    "benId": "970467",
+    "bankNameVN": "Ngân hàng KEB HANA - Chi nhánh Hà Nội",
+    "binIds": [
+      "970467"
+    ]
+  },
+  {
+    "bicCode": "KOE2VNVN",
+    "bankName": "KEB HANA HCM",
+    "bankId": "970466",
+    "benId": "970466",
+    "bankNameVN": "Ngân hàng KEB HANA - Chi nhánh TP.HCM",
+    "binIds": [
+      "970466"
+    ]
+  },
+  {
+    "bicCode": "UMEEVNVN",
+    "bankName": "UMEE",
+    "bankId": "963399",
+    "benId": "963399",
+    "bankNameVN": "Ngân hàng số UMEE - Trực thuộc Kienlongbank",
+    "binIds": []
+  },
+  {
+    "bicCode": "VBSPVNVN",
+    "bankName": "VBSP",
+    "bankId": "999888",
+    "benId": "999888",
+    "bankNameVN": "Ngân hàng chính sách xã hội",
+    "binIds": []
+  },
+  {
+    "bicCode": "VPMMVNVN",
+    "bankName": "VNPT Fintech",
+    "bankId": "971011",
+    "benId": "971011",
+    "bankNameVN": "Trung tâm Dịch vụ Tài chính số VNPT - VNPT Fintech",
+    "binIds": []
+  },
+  {
+    "bicCode": "VTMMVNVN",
+    "bankName": "Viettel Money",
+    "bankId": "971005",
+    "benId": "971005",
+    "bankNameVN": "Tổng Công ty Dịch vụ Số Viettel (VDS) - CN tập đoàn công nghiệp viễn thông Quân Đội",
+    "binIds": []
+  },
+  {
+    "bicCode": "TIMOVNVN",
+    "bankName": "TIMO",
+    "bankId": "963388",
+    "benId": "963388",
+    "bankNameVN": "NH TMCP Bản Việt - Chi nhánh TIMO",
+    "binIds": []
+  },
+  {
+    "bicCode": "MAFCVNVN",
+    "bankName": "MAFC",
+    "bankId": "977777",
+    "benId": "977777",
+    "bankNameVN": "Công ty Tài chính TNHH MTV Mirae Asset Việt Nam - MAFC",
+    "binIds": [
+      "970468"
+    ]
+  },
+  {
+    "bicCode": "QRECVNVN",
+    "bankName": "QR ECOM Service",
+    "bankId": "971100",
+    "benId": "971100",
+    "bankNameVN": "QR ECOM Service",
+    "binIds": []
+  },
+  {
+    "bicCode": "QRPLVNVN",
+    "bankName": "QR PLUS Service",
+    "bankId": "971111",
+    "benId": "971111",
+    "bankNameVN": "QR PLUS Service",
+    "binIds": []
+  }
+]
