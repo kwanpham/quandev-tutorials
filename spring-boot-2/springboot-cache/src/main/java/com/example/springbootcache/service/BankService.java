@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
 import javax.annotation.PostConstruct;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,16 +32,19 @@ public class BankService {
     public void allBankToDatabase() throws Exception {
         List<AchBankEntity> achBankEntities = Arrays.asList(objectMapper.readValue(ResourceUtils.getURL("classpath:bank.json"), AchBankEntity[].class));
         achBankRepo.saveAll(achBankEntities);
+
+        List<AchBankBinEntity> achBankBinEntities = new ArrayList<>();
         for (AchBankEntity achBankEntity : achBankEntities) {
 
             for (String bin : achBankEntity.getBinIds()) {
                 AchBankBinEntity achBankBinEntity = new AchBankBinEntity();
                 achBankBinEntity.setBicCode(achBankEntity.getBicCode());
                 achBankBinEntity.setBinId(bin);
-                achBankBinRepo.save(achBankBinEntity);
+                achBankBinEntities.add(achBankBinEntity);
+
             }
         }
-
+        achBankBinRepo.saveAll(achBankBinEntities);
         log.info("Init {} banks done" , achBankEntities.size());
         log.info("Init {} bins of banks done" , achBankBinRepo.count());
     }

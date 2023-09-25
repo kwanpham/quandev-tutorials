@@ -14,7 +14,7 @@ public class BankController {
     AchBankRepo achBankRepo;
 
     @GetMapping("/benId/{binId}")
-    public String getBenIdByBinId(@PathVariable String binId) {
+    public String findBenIdByBinId(@PathVariable String binId) {
         String temp = achBankRepo.findBenIdByBinId(binId);
         if (StringUtils.isEmptyOrWhitespace(temp)) {
             return "Nothing found";

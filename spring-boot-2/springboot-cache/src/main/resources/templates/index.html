@@ -9,6 +9,71 @@
 </head>
 <body>
 
+<!-- Input Text 1 -->
+<label for="input1">findBenIdByBinId</label>
+<input type="text" id="input1" placeholder="Nhập văn bản 1">
+<button onclick="handleClick(1)">Button 1</button>
+<p id="text1"></p>
+<br>
+
+<!-- Input Text 2 -->
+<label for="input2">findBicCodeByBenId</label>
+<input type="text" id="input2" placeholder="Nhập văn bản 2">
+<button onclick="handleClick(2)">Button 2</button>
+<p id="text2"></p>
+<br>
+
+<!-- Input Text 3 -->
+<label for="input3">findBankIdByBicCode</label>
+<input type="text" id="input3" placeholder="Nhập văn bản 3">
+<button onclick="handleClick(3)">Button 3</button>
+<p id="text3"></p>
+
+<script src="webjars/axios/1.5.0/dist/axios.js"></script>
+<script>
+    function handleClick(number) {
+        const inputValue = document.getElementById(`input${number}`).value;
+        console.log(`Nút ${number} đã được nhấn, giá trị từ ô nhập là: ${inputValue}`);
+
+        const textResult = document.getElementById(`text${number}`);
+        const host = window.location.host;
+        const url = "http://"+host;
+        console.log(url);
+        textResult.innerText = "";
+        if (number === 1) {
+            axios.get(`${url}/benId/` + inputValue)
+                .then(response => {
+                    console.log('Data:', response.data);
+                    textResult.innerText = response.data;
+                })
+                .catch(error => {
+                    console.log('Error:', error);
+                    textResult.innerText = error;
+                });
+        } else if (number === 2) {
+            axios.get(`${url}/bicCode/` + inputValue)
+                .then(response => {
+                    console.log('Data:', response.data);
+                    textResult.innerText = response.data;
+                })
+                .catch(error => {
+                    console.log('Error:', error);
+                    textResult.innerText = error;
+                });
+        } else {
+            axios.get(`${url}/bankId/` + inputValue)
+                .then(response => {
+                    console.log('Data:', response.data);
+                    textResult.innerText = response.data;
+                })
+                .catch(error => {
+                    console.log('Error:', error);
+                    textResult.innerText = error;
+                });
+        }
+
+    }
+</script>
 
 </body>
 </html>
