@@ -16,6 +16,7 @@ public class ControllerTest {
 
     @Autowired
     TaskExecutor batchTaskExecutor;
+
     @GetMapping("/")
     public String get() throws InterruptedException {
         batchTaskExecutor.execute(new Runnable() {

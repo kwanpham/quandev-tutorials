@@ -15,14 +15,12 @@ import quandev.com.springbatchdemo.dto.TransactionDto;
 @Configuration
 public class CommonConfig {
 
-    @Value("${server.tomcat.threads.max}")
-    public Integer MAX_TOMCAT_POOL_SIZE;
 
     @Bean
     public TaskExecutor batchTaskExecutor() {
 
         int CORE_POOL_SIZE = 60;
-        int MAX_POOL_SIZE = MAX_TOMCAT_POOL_SIZE * 3;
+        int MAX_POOL_SIZE = CORE_POOL_SIZE * 3;
 
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
 

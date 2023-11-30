@@ -11,12 +11,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 
 @SpringBootTest
 public class SpringBatchTest {
-
 
 
     @Autowired
@@ -35,8 +32,7 @@ public class SpringBatchTest {
     SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S");
 
     @Test
-    public void givenTaskletsJob_whenJobEnds_thenStatusCompleted()
-            throws Exception {
+    public void givenTaskletsJob_whenJobEnds_thenStatusCompleted() throws Exception {
         System.out.println("Batch job starting");
         JobParameters jobParameters = new JobParametersBuilder()
                 .addString("time", format.format(Calendar.getInstance().getTime())).toJobParameters();
